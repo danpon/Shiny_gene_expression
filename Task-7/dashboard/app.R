@@ -116,7 +116,8 @@ ui <- dashboardPage(
         selectInput(
             inputId = "My_dataset",
             label = "B- Choose Gene ID to show it's full name:",
-            choices = levels(gn$GeneID)
+            #choices = levels(gn$GeneID)
+            choices = gn$GeneID
         ),
         
         selectInput(
